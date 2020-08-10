@@ -1,4 +1,11 @@
+- job:
+    name: myjob1
+    run: myjob1.yaml
+
 - project:
     check:
       jobs:
-        - noop
+        - myjob1
+    gate:
+      jobs:
+        - myjob1
