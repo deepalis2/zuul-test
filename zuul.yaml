@@ -6,6 +6,8 @@
     check:
       jobs:
         - myjob1
+        - noop
     gate:
       jobs:
         - myjob1
+        - noop
