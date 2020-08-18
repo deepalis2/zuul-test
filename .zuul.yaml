@@ -1,5 +1,6 @@
 - job:
     name: myjob1
+    description: My custom job
     run: myjob1.yaml
 
 - project:
