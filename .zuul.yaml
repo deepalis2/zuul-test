@@ -2,20 +2,6 @@
     name: myjob1
     description: My custom job
     run: myjob1.yaml
-    
-- job:
-    name: zuul-build-dashboard-opendev
-    parent: zuul-build-dashboard
-    description: |
-      Builds the zuul dashboard with API URL pointing to
-      https://zuul.opendev.org, which tests multi-tenant
-      deployments not on a suburl, as well as letting us
-      check that dashboard changes won't break the
-      OpenDev service.
-    run: myjob1.yaml
-    vars:
-      zuul_api_url: https://zuul.opendev.org
-
 - project:
     check:
       jobs:
