@@ -7,7 +7,6 @@
       jobs:
         - myjob1
         - noop
-        - linters
         - build-pages
     gate:
       jobs:
